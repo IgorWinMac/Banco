@@ -94,6 +94,19 @@ select * from telefone;
 
 select * from pessoa5 inner join telefone on pessoa5.idPessoa = telefone.id_pessoa;
 
+/*
+Para a tabela estar na terceira forma normal ela precisa estar de acordo com a 1 e 2 forma normal 
+não existir dependências transitivas e nenhum atributo não chave não pode depender de outro atributo não chave
+*/
+
+create table produto(
+	idProduto integer primary key auto_increment,
+    nome_produto varchar(50),
+    quantidade int,
+    valor double
+    #total_estoque double
+);
+
 
 
 
